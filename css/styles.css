@@ -3,8 +3,27 @@
     padding: 0px;
 }
 
+h1{
+    text-align: center;
+}
 header {
     padding: 20px;
     text-align: center;
     background-color: #cf2f2f;
+}
+
+.container-peliculas {
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    background-color: red;
+}
+
+.pelicula{
+    margin: 5px;
+    background-color: blue;
+}
+
+.pelicula img{
+    width: 90%;
 }
