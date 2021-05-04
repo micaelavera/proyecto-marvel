@@ -31,11 +31,6 @@ body {
     padding: 0 40px;
 }
 
-/* .nav {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .nav-menu {
     display: flex;
     margin-right: 50px;
@@ -103,6 +98,24 @@ body {
     position: absolute;
 }
 
-.copyright{
-    background-color: grey;
+.container-footer {
+    margin: 20px;
+}
+
+.footer-col h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.footer-col h3::before{
+    content: '';
+    background-color: #6903C3;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    top: 1.5em;  /*2em*/
+}
+
+i.fab {
+    font-size: 25px;
 }
