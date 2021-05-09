@@ -22,36 +22,61 @@
 }
 
 /* Footer */
+.container-footer {
+    padding: 20px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 30px 30px;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    ". . . ."
+    "information-terms information-terms information-terms information-terms"
+    "copyright copyright copyright copyright"
+    ;  
+}
+
 .logo img {
     width: 60%;
-    margin-top: 60px;
-    margin-left: 30px;
 }
 
-.footer-col {
-    justify-content: justify;
-    margin-top: 10px;
+.icons {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.footer-col h3{
-    font-size: 20px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.footer-col h3::before{
-    content: '';
-    background-color: #6903C3;
-    width: 60px;
-    height: 3px;
-    position: absolute;
-    top: 1.5em; 
+.icons li {
+    margin-right: 10px;
 }
 
 i.fab {
     font-size: 25px;
 }
 
+.information-terminos {
+    grid-area: information-terms;
+}
+
+.lista-terminos {
+    display: flex;
+    justify-content: space-around;
+
+}
 .copyright {
+    grid-area: copyright;
     background-color: #6903C3;
+    text-align: center;
+}
+
+
+.col {
+    position: relative;
+}
+.col h3::before{
+    content: '';
+    background-color: #6903C3;
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    top: 1.2em;
 }
