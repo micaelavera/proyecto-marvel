@@ -16,9 +16,45 @@
     height: 200px;
     text-align: justify;
 }
+/* Movies Section */
+.container-principal-peliculas {
+    margin: 40px 0 0;
+    background-color: black;
+}
 
 .container-peliculas {
     display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.button-carousel {
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.3);
+    color: white;
+    font-size: 2em;
+    width: 40px;
+}
+
+.button-right {
+    right: 0;
+} 
+
+.button-left {
+    left: 10px;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.pelicula {
+    width: 50%;
+}
+
+.pelicula img {
+    width: 100%;
 }
 
 /* Footer */
@@ -60,14 +96,19 @@ i.fab {
 .lista-terminos {
     display: flex;
     justify-content: space-around;
-
 }
+
+.lista-terminos li a {
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .copyright {
     grid-area: copyright;
     background-color: #6903C3;
     text-align: center;
 }
-
 
 .col {
     position: relative;
