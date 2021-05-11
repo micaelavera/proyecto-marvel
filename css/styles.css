@@ -16,9 +16,27 @@
     height: 200px;
     text-align: justify;
 }
+
+/*Comics Section */
+.container-principal-comics {
+    background-color: rgb(126, 126, 126, 0.3);
+}
+.container-comics {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.comic {
+    width: 25%;
+    margin: 5px;   
+}
+
+.comic img {
+    width: 100%;
+}
 /* Movies Section */
 .container-principal-peliculas {
-    margin: 40px 0 0;
     background-color: black;
 }
 
@@ -50,7 +68,7 @@
 }
 
 .pelicula {
-    width: 50%;
+    width: 30%;
 }
 
 .pelicula img {
@@ -99,9 +117,12 @@ i.fab {
 }
 
 .lista-terminos li a {
-    color: grey;
+    color: rgb(110, 110, 110);
     text-decoration: none;
-    font-weight: bold;
+}
+
+.lista-terminos li a:hover {
+    color: #2a0dcc;
 }
 
 .copyright {
