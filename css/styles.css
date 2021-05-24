@@ -82,9 +82,9 @@
     z-index: 1;
 } */
 
-.image-storm {
+ .image-storm {
     height: 300px;
-}
+} 
 
 .image-storm img {
     position: absolute;
@@ -142,6 +142,7 @@ i.fab {
     grid-area: copyright;
     background-color: #6903C3;
     text-align: center;
+    line-height: center;
 }
 
 .col {
