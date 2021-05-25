@@ -21,20 +21,45 @@
 .container-principal-comics {
     background-color: rgb(126, 126, 126, 0.3);
 }
+
 .container-comics {
     display: flex;
-    flex-wrap: wrap; 
     justify-content: center;
 }
 
+.cards {
+    margin: 10 px;
+}
+
 .comic {
-    width: 30%;
-    margin: 5px;  
+    width: 300px;
+    height: 450px;
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
 }
 
 .front img{
     width: 100%;
     height: 100%;
+}
+
+.front , .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: white;
+}
+
+.cards:hover .comic{
+    transform: rotateY(180deg);
 }
 
 /* Movies Section */
